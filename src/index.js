@@ -1208,7 +1208,7 @@ class Viewer {
         mat.makeRotationX(Math.PI / 2);
         this.set_transform(["Cameras", "default", "rotated"], mat.toArray());
 
-        let camera = new THREE.PerspectiveCamera(75, 1, 0.01, 100)
+        let camera = new THREE.PerspectiveCamera(75, 1, 0.01, 150)
         this.set_camera(camera);
 
         this.set_object(["Cameras", "default", "rotated"], camera)
